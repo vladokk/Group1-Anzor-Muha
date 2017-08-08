@@ -415,7 +415,105 @@ ul#nav li.current a { color: #1E732D; }
 	color: #1F1F1F;
 }
 
+.modal {
+    margin-top: 20px;
+    display: block;
+    width: 460px;
+    padding: 45px 81px;
+    color: #000000;
+    background: #ffffff url(../img/fon.jpg);
+    position: relative;
+    left: 437px;
+    z-index: 20;
+}
+.modal_title{
+  margin-bottom: 15px;
+  font-size: 30px;
+  line-height: 42px;
+}
+.modal p {
+  margin: 0;
+}
+.login_form {
+    margin-top: 11px;
+    margin-bottom: 14px;
+}
+.icon_user,
+.icon_password{
+    background: #f9f6f3;
+    border: 2px solid #000000;
+    width: 300px;
+    margin: 0;
+    margin-bottom: 9px;
+    padding: 7px 40px 8px 15px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    text-transform: uppercase;
+}
 
+.login_form input:focus {
+    border: 2px solid #663d15;
+    outline: none;
+}
+.login_form input.icon_user {
+  background: url(../img/user.png) no-repeat 95%;
+}
+
+.login_form input.icon_password {
+  background: url(../img/locked.png) no-repeat 95%;
+}
+.restore_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 5px;
+}
+.restore {
+    font-size: 14px;
+    text-decoration: underline;
+    line-height: inherit;
+    color: #000000;
+}
+.restore:hover {
+    text-decoration: none;
+}
+.login_form .btn {
+  width: 100%;
+  margin-top: 15px;
+}
+.login_checkbox {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+.login_checkbox:hover {
+  color: #663d15;
+}
+.login_checkbox input {
+    display: none;
+}
+.login_checkbox input + .checkbox_indicator {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #f9f6f3;
+    border: 2px solid black;
+    top: 1px;
+    left: 0;
+}
+.login_checkbox input:checked + .checkbox_indicator::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: url(../img/cross.png) no-repeat;
+    top: 2px;
+    left: 2px;
+}
 /* ------------------------------------------------------------------ */
 /* e. Footer
 /* ------------------------------------------------------------------ */
